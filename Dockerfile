@@ -21,7 +21,7 @@ RUN apk add --update \
      rm -rf /temp
   
    
-ADD app.jar /usr/bin/findbugs/lib/app.jar 
+ADD target/findsecbugs-docker-1.0-SNAPSHOT-jar-with-dependencies.jar /usr/bin/findbugs/lib/app.jar 
 
 WORKDIR /workdir
 
